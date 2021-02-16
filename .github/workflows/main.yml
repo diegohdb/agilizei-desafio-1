@@ -46,6 +46,7 @@ jobs:
       # Gerar o relatorio
       - run: npm run report:merge
         continue-on-error: true
+        
       - run: npm run report:mocha
         continue-on-error: true
       
