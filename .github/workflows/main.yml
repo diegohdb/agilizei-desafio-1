@@ -19,7 +19,7 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    continue-on-error: ${{ matrix.experimental }}
+    continue-on-error: true
     strategy:
       matrix:
         node-version: [12.x]
@@ -37,14 +37,17 @@ jobs:
       
       # Instalando as dependencias
       - run: npm install
+        continue-on-error: true
       
       # Executar os testes
       - run: npm run cy:run
-      
+        continue-on-error: true
+        
       # Gerar o relatorio
       - run: npm run report:merge
+        continue-on-error: true
       - run: npm run report:mocha
-      
+        continue-on-error: true
       
       # Publicar relatorio em HTML
       - name: Deploy to GithubPages
