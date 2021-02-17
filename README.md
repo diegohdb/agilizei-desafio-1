@@ -1,7 +1,7 @@
 
 <h1 align="left">:computer: Agilizei - Desafio 01  </h1>
 
-Agilizei Desafio 01 Resolution using Cypress  
+Agilizei Desafio 01 Solution using Cypress  
 
 ## Introduction
 This project contains the interface test automation of the <a href="http://automationpractice.com/">automation practice website</a>. 
