@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-02-17T10:16:31.544Z",
-    "end": "2021-02-17T10:16:43.293Z",
-    "duration": 11749,
+    "start": "2021-02-17T20:24:51.038Z",
+    "end": "2021-02-17T20:25:06.300Z",
+    "duration": 15262,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "fc5e725b-5b29-424d-9866-d2d700eb28a3",
+      "uuid": "685ebabd-b134-4795-812d-6c80d768281a",
       "title": "",
       "fullFile": "cypress/integration/Register/register.spec.js",
       "file": "cypress/integration/Register/register.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "4b55b2b9-60ed-417b-a64f-0a3590ee4002",
+          "uuid": "c131f8a5-d297-48e3-b1fc-50306a55ab2b",
           "title": "Register",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Registering new user",
               "fullTitle": "Register Registering new user",
               "timedOut": null,
-              "duration": 11689,
+              "duration": 15174,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "var first = chance.first();\nvar last = chance.last();\ncy.visit('index.php');\ncy.get('a[class=login]').click();\ncy.get('input#email_create').type(chance.email());\ncy.get('button#SubmitCreate').click();\ncy.get('input#id_gender1').check();\ncy.get('input#customer_firstname').type(first);\ncy.get('input#customer_lastname').type(last);\ncy.get('input#passwd').type('Test@123');\ncy.get('select#days').select('10');\ncy.get('select#months').select('March');\ncy.get('select#years').select('1990');\ncy.get('input#newsletter').check();\ncy.get('input#optin').check();\ncy.get('input#address1').type(chance.address());\ncy.get('input#city').type(chance.city());\ncy.get('select#id_state').select('Indiana');\ncy.get('input#postcode').type(chance.zip());\ncy.get('input#phone_mobile').type(chance.phone());\ncy.get('input#alias').type('Home');\ncy.get('button#submitAccount').click();\ncy.url().should('contain', 'my-account');\ncy.get('p[class^=info]').should('contain.text', 'Welcome to your account');",
               "err": {},
-              "uuid": "03bcce6e-34d9-420b-a24e-50e0ab4854d9",
-              "parentUUID": "4b55b2b9-60ed-417b-a64f-0a3590ee4002",
+              "uuid": "70186f0c-9f42-493b-83f5-74377e6fa3b2",
+              "parentUUID": "c131f8a5-d297-48e3-b1fc-50306a55ab2b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "03bcce6e-34d9-420b-a24e-50e0ab4854d9"
+            "70186f0c-9f42-493b-83f5-74377e6fa3b2"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 11689,
+          "duration": 15174,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
