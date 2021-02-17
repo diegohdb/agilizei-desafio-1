@@ -24,8 +24,6 @@ context('Register', () => {
         cy.get('input#newsletter').check();
         cy.get('input#optin').check();
 
-        //cy.get('input#firstname').type(first);
-        //cy.get('input#lastname').type(last);
         cy.get('input#address1').type(chance.address());
         cy.get('input#city').type(chance.city());
         cy.get('select#id_state').select('Indiana');
@@ -36,7 +34,5 @@ context('Register', () => {
 
         cy.url().should('contain', 'my-account');
         cy.get('p[class^=info]').should('contain.text', 'Welcome to your account');
-        
-
     });
 });
