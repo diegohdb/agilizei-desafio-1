@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-02-17T10:09:04.837Z",
-    "end": "2021-02-17T10:09:16.485Z",
-    "duration": 11648,
+    "start": "2021-02-17T10:16:31.544Z",
+    "end": "2021-02-17T10:16:43.293Z",
+    "duration": 11749,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e313a55d-2dec-4c26-9dd8-9219fbf1adc4",
+      "uuid": "fc5e725b-5b29-424d-9866-d2d700eb28a3",
       "title": "",
       "fullFile": "cypress/integration/Register/register.spec.js",
       "file": "cypress/integration/Register/register.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "16f948af-7bf9-4fa3-85ed-77172cb4b33b",
+          "uuid": "4b55b2b9-60ed-417b-a64f-0a3590ee4002",
           "title": "Register",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Registering new user",
               "fullTitle": "Register Registering new user",
               "timedOut": null,
-              "duration": 11580,
+              "duration": 11689,
               "state": "passed",
               "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "var first = chance.first();\nvar last = chance.last();\ncy.visit('index.php');\ncy.get('a[class=login]').click();\ncy.get('input#email_create').type(chance.email());\ncy.get('button#SubmitCreate').click();\ncy.get('input#id_gender1').check();\ncy.get('input#customer_firstname').type(first);\ncy.get('input#customer_lastname').type(last);\ncy.get('input#passwd').type('Test@123');\ncy.get('select#days').select('10');\ncy.get('select#months').select('March');\ncy.get('select#years').select('1990');\ncy.get('input#newsletter').check();\ncy.get('input#optin').check(); //cy.get('input#firstname').type(first);\n//cy.get('input#lastname').type(last);\ncy.get('input#address1').type(chance.address());\ncy.get('input#city').type(chance.city());\ncy.get('select#id_state').select('Indiana');\ncy.get('input#postcode').type(chance.zip());\ncy.get('input#phone_mobile').type(chance.phone());\ncy.get('input#alias').type('Home');\ncy.get('button#submitAccount').click();\ncy.url().should('contain', 'my-account');\ncy.get('p[class^=info]').should('contain.text', 'Welcome to your account');",
+              "code": "var first = chance.first();\nvar last = chance.last();\ncy.visit('index.php');\ncy.get('a[class=login]').click();\ncy.get('input#email_create').type(chance.email());\ncy.get('button#SubmitCreate').click();\ncy.get('input#id_gender1').check();\ncy.get('input#customer_firstname').type(first);\ncy.get('input#customer_lastname').type(last);\ncy.get('input#passwd').type('Test@123');\ncy.get('select#days').select('10');\ncy.get('select#months').select('March');\ncy.get('select#years').select('1990');\ncy.get('input#newsletter').check();\ncy.get('input#optin').check();\ncy.get('input#address1').type(chance.address());\ncy.get('input#city').type(chance.city());\ncy.get('select#id_state').select('Indiana');\ncy.get('input#postcode').type(chance.zip());\ncy.get('input#phone_mobile').type(chance.phone());\ncy.get('input#alias').type('Home');\ncy.get('button#submitAccount').click();\ncy.url().should('contain', 'my-account');\ncy.get('p[class^=info]').should('contain.text', 'Welcome to your account');",
               "err": {},
-              "uuid": "ad1b66a1-5abf-4b68-9842-03c216bb3ddb",
-              "parentUUID": "16f948af-7bf9-4fa3-85ed-77172cb4b33b",
+              "uuid": "03bcce6e-34d9-420b-a24e-50e0ab4854d9",
+              "parentUUID": "4b55b2b9-60ed-417b-a64f-0a3590ee4002",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ad1b66a1-5abf-4b68-9842-03c216bb3ddb"
+            "03bcce6e-34d9-420b-a24e-50e0ab4854d9"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 11580,
+          "duration": 11689,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
