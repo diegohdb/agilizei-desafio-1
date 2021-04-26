@@ -17,7 +17,7 @@ context('Register', () => {
         cy.get('input#id_gender1').check();
         cy.get('input#customer_firstname').type(first);
         cy.get('input#customer_lastname').type(last);
-        cy.get('input#passwd').type('Test@123');
+        cy.get('input#passwd').type(chance.string({ length: 8 }));
         cy.get('select#days').select('10');
         cy.get('select#months').select('March');
         cy.get('select#years').select('1990');
